@@ -1,0 +1,85 @@
+﻿@model CardonCodingExercise.Models.Qualification
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Qualification</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.PhoneNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.PhoneNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Candidate.ZipCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Candidate.ZipCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QualificationName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QualificationName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateStarted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateStarted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCompleted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCompleted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.QualificationID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
